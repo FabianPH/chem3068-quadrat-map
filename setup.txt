@@ -1,0 +1,26 @@
+macOS:
+# 1) Create & activate a virtual environment
+    python3 -m venv .venv
+    source .venv/bin/activate
+
+# 2) Upgrade pip and install deps
+    python -m pip install --upgrade pip
+    pip install numpy matplotlib pandas xlsxwriter
+
+# 3) Run commands
+
+Windows:
+# 1) Open PowerShell in the project folder, then:
+    python -m venv .venv
+    .\.venv\Scripts\Activate.ps1
+
+# If you get a policy error, run this once in the same PowerShell session:
+    Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+# then activate again:
+    .\.venv\Scripts\Activate.ps1
+
+# 2) Upgrade pip and install deps
+    python -m pip install --upgrade pip
+    pip install numpy matplotlib pandas xlsxwriter
+
+# 3) Run commands
