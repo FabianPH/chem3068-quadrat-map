@@ -135,7 +135,7 @@ def write_tables(df: pd.DataFrame, out_csv: str, out_xlsx: str) -> None:
 # ------------------------ CLI ------------------------
 
 def parse_args():
-    p = argparse.ArgumentParser(description="Experiment C (Phase 1): square quadrats at randomized dots.")
+    p = argparse.ArgumentParser(description="Experiment 3: square quadrats at randomized dots.")
     p.add_argument("--width", type=float, required=True, help="Study area width in meters")
     p.add_argument("--height", type=float, required=True, help="Study area height in meters")
     p.add_argument("--dot-spacing", type=float, required=True, help="Spacing between dots in meters")
@@ -200,7 +200,7 @@ def main():
     # Build outputs
     df = build_table(centers, sq, meta)
 
-    title = (f"Dot Quadrat Map — Experiment C "
+    title = (f"Dot Quadrat Map — Experiment 3 "
              f"({args.width}m × {args.height}m; dots every {args.dot_spacing}m; "
              f"shape area={area_cm2}cm²; n={args.n_quadrats})")
     seed_note = f"Seed: {seed}"
