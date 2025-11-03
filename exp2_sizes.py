@@ -186,7 +186,7 @@ def parse_sizes_cm_list(s: str) -> List[float]:
 
 def parse_args():
     p = argparse.ArgumentParser(
-        description="Experiment B: same-shape (square) quadrats with VARIABLE sizes; "
+        description="Experiment 2: same-shape (square) quadrats with VARIABLE sizes; "
                     "compute counts per size to match a TARGET sampled area (per size).")
     p.add_argument("--width", type=float, required=True, help="Study area width in meters")
     p.add_argument("--height", type=float, required=True, help="Study area height in meters")
@@ -284,7 +284,7 @@ def main():
                      meta=meta)
 
     # Title and note
-    title = (f"Dot Quadrat Map — Experiment B "
+    title = (f"Dot Quadrat Map — Experiment 2 "
              f"({args.width}m × {args.height}m; dots every {args.dot_spacing}m)")
     note_lines = [f"Seed: {seed}"]
 
